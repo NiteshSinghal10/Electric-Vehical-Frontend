@@ -31,5 +31,9 @@ class EnglishTranslations {
     'forgotPassword': 'Forgot Password?',
     'iDontHaveAcc': "I don't have an account. ",
     'signup': 'Signup',
+    'forgotPasswordTitle': 'Forgot Password',
+    'forgotPasswordSubtitle': 'Enter your phone number to reset your password',
+    'resetPasswordTitle': 'Reset Password',
+    'resetPasswordSubtitle': 'Create a new password to secure your account',
   };
 }

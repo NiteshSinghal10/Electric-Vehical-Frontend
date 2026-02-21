@@ -24,8 +24,8 @@ class LoginController extends GetxController {
   }
 
   void forgotPassword() {
-    Get.log('Forgot password clicked');
-    // Implement forgot password navigation
+    Get.log('Navigating to: ${RouteNames.forgotPassword}');
+    Get.toNamed<void>(RouteNames.forgotPassword);
   }
 
   @override

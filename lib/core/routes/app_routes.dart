@@ -1,10 +1,14 @@
 import 'package:get/get.dart';
 
+import '../../src/auth/presentation/controllers/forgot_password_controller.dart';
 import '../../src/auth/presentation/controllers/login_controller.dart';
 import '../../src/auth/presentation/controllers/otp_verification_controller.dart';
+import '../../src/auth/presentation/controllers/reset_password_controller.dart';
 import '../../src/auth/presentation/controllers/signup_controller.dart';
+import '../../src/auth/presentation/pages/forgot_password.dart';
 import '../../src/auth/presentation/pages/login.dart';
 import '../../src/auth/presentation/pages/otp_verification.dart';
+import '../../src/auth/presentation/pages/reset_password.dart';
 import '../../src/auth/presentation/pages/signup.dart';
 import '../../src/splash/presentation/controllers/splash_controller.dart';
 import '../../src/splash/presentation/pages/splash.dart';
@@ -41,6 +45,20 @@ class AppPages {
       page: () => const OtpVerificationScreen(),
       binding: BindingsBuilder<void>(() {
         Get.lazyPut<OtpVerificationController>(OtpVerificationController.new);
+      }),
+    ),
+    GetPage(
+      name: RouteNames.forgotPassword,
+      page: () => const ForgotPasswordScreen(),
+      binding: BindingsBuilder<void>(() {
+        Get.lazyPut<ForgotPasswordController>(ForgotPasswordController.new);
+      }),
+    ),
+    GetPage(
+      name: RouteNames.resetPassword,
+      page: () => const ResetPasswordScreen(),
+      binding: BindingsBuilder<void>(() {
+        Get.lazyPut<ResetPasswordController>(ResetPasswordController.new);
       }),
     ),
   ];

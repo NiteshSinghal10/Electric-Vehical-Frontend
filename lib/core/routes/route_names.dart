@@ -6,4 +6,6 @@ abstract class RouteNames {
   static const signup = '/signup';
   static const otpVerification = '/otpVerification';
   static const login = '/login';
+  static const forgotPassword = '/forgotPassword';
+  static const resetPassword = '/resetPassword';
 }

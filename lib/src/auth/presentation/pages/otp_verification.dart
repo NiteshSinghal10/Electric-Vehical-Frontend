@@ -48,9 +48,10 @@ class OtpVerificationScreen extends GetView<OtpVerificationController> {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            spacing: 20,
             children: [
+              const SizedBox(height: 10),
               InputLabelWidget(text: 'otpLabel'.tr),
-              const SizedBox(height: 20),
               Center(
                 child: Form(
                   key: controller.formKey,
@@ -70,7 +71,6 @@ class OtpVerificationScreen extends GetView<OtpVerificationController> {
                   ),
                 ),
               ),
-              const SizedBox(height: 30),
               Center(
                 child: Obx(() {
                   if (controller.canResend.value) {
