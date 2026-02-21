@@ -1,16 +1,37 @@
-# power_port
+# 🚗⚡ Power Port  
 
-A new Flutter project.
+**Power Port** is a modern, cross-platform mobile application built with **Flutter**, structured on **Clean Architecture**, and powered by **GetX** for state management, routing, and dependency injection.  
 
-## Getting Started
+The app bridges the gap between **EV charger providers** and **EV users**, providing a seamless experience for discovering, booking, and managing EV charging stations across India.  
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🌟 Features  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🔌 For EV Users  
+- Search for **nearby charging stations**.  
+- View **real-time charger availability**.  
+- Filter by **power rating, connector type, and price**.  
+- Get **navigation directions** to charging stations.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🏭 For Charger Providers  
+- Register new charging stations.  
+- Manage multiple stations and charging points.  
+- Track **usage statistics and availability**.  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Flutter** (Cross-platform mobile development)  
+- **GetX** (State management, routing, dependency injection)  
+- **Dio** (Networking)  
+- **Sqflite** (Local database for offline storage)  
+- **JSON Serializable + Build Runner** (Code generation & data models)  
+
+---
+
+## 📂 Project Structure  
+
+Follows **Clean Architecture** principles with separation of concerns:  
+
