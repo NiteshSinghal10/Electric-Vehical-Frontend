@@ -3,4 +3,7 @@ abstract class RouteNames {
   RouteNames._();
 
   static const splash = '/splash';
+  static const signup = '/signup';
+  static const otpVerification = '/otpVerification';
+  static const login = '/login';
 }
