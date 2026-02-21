@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
 import '../../../../core/commons/Widgets/common_fab.dart';
@@ -15,13 +16,15 @@ class OtpVerificationScreen extends GetView<OtpVerificationController> {
     final defaultPinTheme = PinTheme(
       width: 56,
       height: 56,
-      textStyle: const TextStyle(
+      textStyle: TextStyle(
         fontSize: 22,
-        color: Color.fromRGBO(30, 60, 87, 1),
+        color: Theme.of(context).textTheme.bodyLarge?.color,
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.grey.shade300),
+        border: Border.all(
+          color: Theme.of(context).dividerColor,
+        ),
       ),
     );
 
@@ -58,6 +61,8 @@ class OtpVerificationScreen extends GetView<OtpVerificationController> {
                   child: Pinput(
                     length: 4,
                     controller: controller.otpController,
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                     defaultPinTheme: defaultPinTheme,
                     focusedPinTheme: focusedPinTheme,
                     errorPinTheme: errorPinTheme,

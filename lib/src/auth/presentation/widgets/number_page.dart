@@ -44,9 +44,7 @@ class NumberPage extends GetView<SignupController> {
                         controller.selectedCountryCode.value =
                             country.dialCode ?? '+91';
                       },
-                      textStyle: const TextStyle(
-                        fontSize: 20,
-                      ),
+                      textStyle: Theme.of(context).textTheme.bodyLarge,
                       initialSelection: controller.selectedCountryCode.value,
                     ),
                   ),
